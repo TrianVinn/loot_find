@@ -1,0 +1,6 @@
+[gd_resource type="InventoryDatabase" format=3 uid="uid://02yus888xysq"]
+
+[sub_resource type="Loot" id="Loot_c5noq"]
+
+[resource]
+loots = Array[Loot]([SubResource("Loot_c5noq")])

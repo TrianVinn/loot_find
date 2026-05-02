@@ -1,0 +1,147 @@
+[gd_scene format=3 uid="uid://bunwj3qf31p7k"]
+
+[ext_resource type="Script" uid="uid://qqxmh6rfpsru" path="res://scripts/entered_zone_house.gd" id="1_fyqef"]
+[ext_resource type="Texture2D" uid="uid://d2dstwwet28qp" path="res://table.png" id="2_27fn8"]
+[ext_resource type="Texture2D" uid="uid://d0y30ogg7kolx" path="res://Без названия (1).jpg" id="3_nltto"]
+[ext_resource type="Script" uid="uid://b8jyh66levfkn" path="res://panel.gd" id="4_nltto"]
+[ext_resource type="PackedScene" uid="uid://cuqrswvimvkv1" path="res://loot_slot_inventory.tscn" id="5_ibotj"]
+
+[node name="ui" type="CanvasLayer" unique_id=578235085]
+
+[node name="entered_zone_house" type="Button" parent="." unique_id=2009353881 groups=["entered_zone_house"]]
+offset_left = 364.0
+offset_top = 15.0
+offset_right = 600.0
+offset_bottom = 85.0
+text = "ВОЙТИ В ДОМ"
+script = ExtResource("1_fyqef")
+
+[node name="dropped_items" type="Button" parent="." unique_id=157709193]
+visible = false
+offset_left = 1017.0
+offset_top = 50.0
+offset_right = 1147.0
+offset_bottom = 107.0
+text = "ОТКРИТЬЬЬ "
+
+[node name="open_inventory" type="TextureButton" parent="." unique_id=1584286527]
+offset_top = 523.0
+offset_right = 130.0
+offset_bottom = 648.0
+texture_normal = ExtResource("2_27fn8")
+texture_hover = ExtResource("3_nltto")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="open_inventory" unique_id=897192246]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "INV"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="inventory_panel" type="Panel" parent="." unique_id=743550646]
+visible = false
+offset_left = 350.0
+offset_top = 231.0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("4_nltto")
+
+[node name="inventory_label" type="Label" parent="inventory_panel" unique_id=497366515]
+layout_mode = 0
+offset_right = 814.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(0.90254384, 0.909015, 0.7444082, 1)
+theme_override_font_sizes/font_size = 40
+text = "ИНВЕНТАРЬ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="inventory_panel" unique_id=1300607370 groups=["inventory_slots"]]
+layout_mode = 1
+offset_top = 107.0
+offset_right = 814.0
+offset_bottom = 444.0
+columns = 8
+
+[node name="loot_slot_inventory" parent="inventory_panel/GridContainer" unique_id=805068135 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory2" parent="inventory_panel/GridContainer" unique_id=2062537816 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory3" parent="inventory_panel/GridContainer" unique_id=1206072954 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory4" parent="inventory_panel/GridContainer" unique_id=1919448917 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory5" parent="inventory_panel/GridContainer" unique_id=446154750 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory6" parent="inventory_panel/GridContainer" unique_id=365896091 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory7" parent="inventory_panel/GridContainer" unique_id=1721126920 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory8" parent="inventory_panel/GridContainer" unique_id=1484927560 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory9" parent="inventory_panel/GridContainer" unique_id=300053898 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory10" parent="inventory_panel/GridContainer" unique_id=1467929209 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory11" parent="inventory_panel/GridContainer" unique_id=1141315922 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory12" parent="inventory_panel/GridContainer" unique_id=1008953510 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory13" parent="inventory_panel/GridContainer" unique_id=910646752 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory14" parent="inventory_panel/GridContainer" unique_id=1351377152 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory15" parent="inventory_panel/GridContainer" unique_id=1015806326 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory16" parent="inventory_panel/GridContainer" unique_id=1796195620 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory17" parent="inventory_panel/GridContainer" unique_id=424749310 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory18" parent="inventory_panel/GridContainer" unique_id=1314388983 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory19" parent="inventory_panel/GridContainer" unique_id=34536229 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory20" parent="inventory_panel/GridContainer" unique_id=994927102 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory21" parent="inventory_panel/GridContainer" unique_id=1523823885 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory22" parent="inventory_panel/GridContainer" unique_id=888565952 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory23" parent="inventory_panel/GridContainer" unique_id=750928590 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[node name="loot_slot_inventory24" parent="inventory_panel/GridContainer" unique_id=1421484783 instance=ExtResource("5_ibotj")]
+layout_mode = 2
+
+[connection signal="button_down" from="entered_zone_house" to="entered_zone_house" method="_on_button_down"]
+[connection signal="button_down" from="open_inventory" to="inventory_panel" method="_on_texture_button_button_down"]

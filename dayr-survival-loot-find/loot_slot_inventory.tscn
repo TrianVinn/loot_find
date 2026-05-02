@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cuqrswvimvkv1"]
+
+[ext_resource type="Texture2D" uid="uid://b10ih0bsueuq1" path="res://chest.png" id="1_deur0"]
+
+[node name="loot_slot_inventory" type="TextureButton" unique_id=805068135]
+custom_minimum_size = Vector2(96, 96)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1056.0
+offset_bottom = -552.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_deur0")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1818786030]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=69995740]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

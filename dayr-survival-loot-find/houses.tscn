@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://qlmuvvcros7j"]
+
+[ext_resource type="Texture2D" uid="uid://cqx3sx7xr37h5" path="res://ruin_yellow.png" id="1_nmcni"]
+[ext_resource type="Script" uid="uid://dbs1dqrepjv8k" path="res://scripts/house_area.gd" id="2_0x7wa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0x7wa"]
+size = Vector2(140, 126)
+
+[node name="Node2D" type="Node2D" unique_id=1496261158]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1233886237]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_nmcni")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1037870645 groups=["house_area"]]
+script = ExtResource("2_0x7wa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=427102520]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_0x7wa")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

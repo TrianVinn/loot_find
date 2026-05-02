@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://ek06bdt3evpr"]
+
+[ext_resource type="Texture2D" uid="uid://b10ih0bsueuq1" path="res://chest.png" id="1_h4p3b"]
+[ext_resource type="Texture2D" uid="uid://d2dstwwet28qp" path="res://table.png" id="2_k2ppm"]
+[ext_resource type="Script" uid="uid://8vejouo83lg8" path="res://scripts/slots.gd" id="3_qk3bg"]
+
+[node name="loot_slots" type="TextureButton" unique_id=2032633062]
+custom_minimum_size = Vector2(64, 64)
+offset_right = 128.0
+offset_bottom = 128.0
+toggle_mode = true
+texture_normal = ExtResource("1_h4p3b")
+texture_hover = ExtResource("2_k2ppm")
+stretch_mode = 0
+script = ExtResource("3_qk3bg")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=484431908]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=238635773]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 0.32941177, 1)
+horizontal_alignment = 2
